@@ -5,7 +5,7 @@
 """
 DESCRIPTION :
 
-This package allows you to generat lorem text randomly from 1 to 500 words.
+This Sublime Text packahe allows you to generat lorem text randomly from 1 to 500 words.
 
 It's easy to use, there is an example :
 
@@ -83,14 +83,3 @@ class GenerateLorem(sublime_plugin.EventListener):
 			return (completions_data)
 
 		return 0
-
-
-
-
-		
-
-			
-
-
-		
-
