@@ -21,4 +21,4 @@ This plugin works with every languages.
 
 Here is an example :
 
-![lorem-gif-test](test-lorem.gif)
+![lorem-gif-test](lorem-test.gif)
