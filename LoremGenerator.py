@@ -67,7 +67,7 @@ class GenerateLorem(sublime_plugin.EventListener):
 			else:
 				lorem_str = "Lorem ipsum"
 
-			# Still formating return str
+			# Still formating returned str
 			for i in range(int(lorem_len) - 2):
 				if i%10 ==0 and i!=0:
 					lorem_str += ". " + lorem_words[randint(0, len(lorem_words) - 1)].capitalize()
