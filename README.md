@@ -18,4 +18,4 @@ This plugin works with every languages.
 
 Here is an example :
 
-![](test-lorem.gif)
+![lorem-gif-test](test-lorem.gif)

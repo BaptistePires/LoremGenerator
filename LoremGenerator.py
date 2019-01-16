@@ -23,7 +23,7 @@ email specified in the header of the file
 
 import sublime
 import sublime_plugin
-import re
+from re import search, sub
 from random import randint
 
 class GenerateLorem(sublime_plugin.EventListener):
@@ -39,11 +39,11 @@ class GenerateLorem(sublime_plugin.EventListener):
 
 		# This regex check if the word contains at least "lo" if it doesn't there is no 
 		# reason to continue
-		if re.search("^[l,L]o[rem]{0,3}[0-9]{0,}$", word) == None:
+		if search("^[l,L]o[rem]{0,3}[0-9]{0,}$", word) == None:
 			return
 		else:
 			# There we check the number of 
-			nb_word = re.sub(r"[^\0-9]", "", word)
+			nb_word = sub(r"[^\0-9]", "", word)
 			
 			# Some test to get the number of words wanted
 			if len(nb_word) == 0:
@@ -67,7 +67,7 @@ class GenerateLorem(sublime_plugin.EventListener):
 			else:
 				lorem_str = "Lorem ipsum"
 
-			# Still formating returned str
+			# Still formating return str
 			for i in range(int(lorem_len) - 2):
 				if i%10 ==0 and i!=0:
 					lorem_str += ". " + lorem_words[randint(0, len(lorem_words) - 1)].capitalize()
