@@ -9,7 +9,7 @@ It's easy to use, there is an example :
 
  - Lorem : Will generate 25 Lorem words
  - Lorem287 : Will generate 287 Lorem words
- - Lorem 800 : Will generate 500 Lorem words
+ - Lorem800 : Will generate 500 Lorem words
 
 
 
